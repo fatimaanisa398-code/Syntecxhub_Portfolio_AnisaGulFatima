@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisa Gul Fatima | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color:white;
+}
+
+/* ===== Navbar ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+}
+
+header h1{
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#ddd;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#9f7aea;
+}
+
+/* ===== Hero ===== */
+.hero{
+    text-align:center;
+    padding:120px 20px 100px;
+}
+
+.hero h2{
+    font-size:50px;
+}
+
+.hero span{
+    color:#9f7aea;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#ccc;
+}
+
+/* ===== Sections ===== */
+section{
+    padding:80px 100px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:32px;
+}
+
+/* ===== Glass Cards ===== */
+.card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===== Skills Layout ===== */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.skill-box{
+    padding:15px 30px;
+    border-radius:30px;
+    background:#9f7aea;
+    color:white;
+    font-weight:500;
+}
+
+/* ===== Projects ===== */
+.projects-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+
+/* ===== Contact ===== */
+.contact{
+    text-align:center;
+}
+
+/* ===== Footer ===== */
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.4);
+    margin-top:60px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    section{
+        padding:60px 20px;
+    }
+    header{
+        padding:20px;
+        flex-direction:column;
+    }
+    nav{
+        margin-top:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anisa Gul Fatima</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Hi, I'm <span>Anisa</span></h2>
+    <p>Computer Science Undergraduate | Aspiring Software Developer</p>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a 4th Semester Computer Science student passionate about software development and problem solving.
+            I have strong foundations in C++, Java, OOP, Data Structures and Database Systems.
+            Currently seeking internship opportunities to gain real-world experience.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box">C++</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">OOP</div>
+        <div class="skill-box">Data Structures</div>
+        <div class="skill-box">MySQL</div>
+        <div class="skill-box">Problem Solving</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="card">
+            <h3>Airline Management System</h3>
+            <p>Database-driven system using MySQL to manage flights and bookings efficiently.</p>
+        </div>
+
+        <div class="card">
+            <h3>Inventory Management System</h3>
+            <p>Built using Data Structures for effective stock management and operations.</p>
+        </div>
+
+        <div class="card">
+            <h3>OOP Applications</h3>
+            <p>Console-based applications implementing core OOP principles.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>📍 Karachi, Pakistan</p>
+        <p>📞 0330-2310149</p>
+        <p>📧 anisagul116@gmail.com</p>
+        <p>🔗 linkedin.com/in/anisa-fatima-4279a0332</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Anisa Gul Fatima | Portfolio
+</footer>
+
+</body>
+</html>
